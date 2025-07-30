@@ -1,0 +1,71 @@
+.nav-header {
+  background-color: #272727;
+  padding: 20px;
+}
+
+/* On larger screens, increase horizontal padding */
+@media screen and (min-width: 768px) {
+  .nav-header {
+    padding: 20px 60px;
+  }
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+.website-logo {
+  width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-logo {
+    width: 120px;
+  }
+}
+
+/* Key Change: This will push the nav menu and the logout button to the far right */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  margin-left: auto;
+}
+
+.nav-link {
+  font-family: 'Roboto';
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-link {
+    margin: 0 16px;
+  }
+}
+
+.logout-button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 24px;
+  color: #ffffff;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Add margin to create space from the nav links */
+  margin-left: 16px; 
+}
+
+@media screen and (min-width: 768px) {
+  .logout-button {
+    padding: 8px 32px;
+  }
+}
